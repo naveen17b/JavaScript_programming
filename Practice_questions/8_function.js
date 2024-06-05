@@ -24,3 +24,14 @@ const greet = name => `Hello, ${name}!`;
     console.log(`Hello, ${name}!`);
 })('World');
 
+
+//Generator function, it can pause and resume execution:
+
+function* generatorFunction() {
+    yield 'Hello';
+    yield 'World';
+}
+
+const gen = generatorFunction();
+console.log(gen.next().value); // Hello
+console.log(gen.next().value); // World
