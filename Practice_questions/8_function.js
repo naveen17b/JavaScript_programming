@@ -35,3 +35,22 @@ function* generatorFunction() {
 const gen = generatorFunction();
 console.log(gen.next().value); // Hello
 console.log(gen.next().value); // World
+
+//Methodf defined in object literal:
+const person = {
+    name: 'Alice',
+    greet() {
+        return `Hello, ${this.name}!`;
+    }
+};
+
+//Class method
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+
+    greet() {
+        return `Hello, ${this.name}!`;
+    }
+}
