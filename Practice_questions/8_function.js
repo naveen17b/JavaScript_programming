@@ -1,3 +1,9 @@
+// function: They encapsulate code that can be reused, help organize code, 
+//and implement complex behavior. Functions in JavaScript are first-class objects, 
+//meaning they can be stored in variables, passed as arguments to other functions, and returned from other functions.
+
+
+
 //declaring function
 function greet(name) {
     return `Hello, ${name}!`;
