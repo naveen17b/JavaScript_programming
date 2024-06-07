@@ -4,6 +4,21 @@
 
 
 
+/**
+ * Bindings declared with let and const are in fact local to the block that they
+ * are declared in, so if you create one of those inside of a loop, the code before and
+ * after the loop cannot “see” it.
+ */
+
+
+/**
+ * 
+ * @param {*} name 
+ * @returns 
+ */
+
+
+
 //declaring function
 function greet(name) {
     return `Hello, ${name}!`;
