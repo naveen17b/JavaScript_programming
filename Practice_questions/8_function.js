@@ -12,7 +12,7 @@ function greet(name) {
 
 //function expression can be stored in variable:
 
-const greet = function(name) {
+const greet = function (name) {
     return `Hello, ${name}!`;
 };
 
@@ -26,7 +26,7 @@ const greet = name => `Hello, ${name}!`;
 
 
 //immediately invoked functgion expressions:
-(function(name) {
+(function (name) {
     console.log(`Hello, ${name}!`);
 })('World');
 
@@ -60,3 +60,59 @@ class Person {
         return `Hello, ${this.name}!`;
     }
 }
+
+/**
+ * Modules allow for better organization of code by dividing it into smaller, reusable pieces. 
+ * This is crucial for maintaining and scaling large applications.
+ * 
+ */
+
+// greet.js
+export function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+// main.js
+import { greet } from './greet.js';
+console.log(greet('World'));
+
+
+/**
+ * Arrow function: Arrow functions provide a more concise syntax and do not have their own this context.
+ */
+
+
+const greet = (name) => {
+    return `Hello, ${name}!`;
+};
+
+// For single expression functions, the return keyword can be omitted
+const greet = name => `Hello, ${name}!`;
+
+// Using the function
+console.log(greet('Charlie')); // Output: Hello, Charlie!
+
+/**
+ * 
+ * @param {*} name 
+ * @returns 
+ */
+
+// Function Declaration
+function greetDeclaration(name) {
+    return `Hello, ${name}!`;
+}
+
+// Function Expression
+const greetExpression = function(name) {
+    return `Hello, ${name}!`;
+};
+
+// Arrow Function
+const greetArrow = name => `Hello, ${name}!`;
+
+// Using the functions
+console.log(greetDeclaration('Alice'));    // Output: Hello, Alice!
+console.log(greetExpression('Bob'));       // Output: Hello, Bob!
+console.log(greetArrow('Charlie'));        // Output: Hello, Charlie!
+
