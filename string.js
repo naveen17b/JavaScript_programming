@@ -2,8 +2,36 @@ const string1 = "con"
 string2 = 'cat'
 string3 = 'enate'
 
+const name = 'Captain America'
+
 const stringValue = string1 + string2+ string3
 console.log(stringValue)
 
-string = `half of 100 is ${100 / 2}`
+string = `half of 100 is ${100 / 2}`  // string interpolation
 console.log(string)
+
+const newName = new String('CaptainAmericaIndia');
+
+console.log(newName);
+
+//console.log(newName__proto__);
+
+console.log(newName.length);
+
+console.log(newName[0]);
+
+console.log(newName.split(8));
+
+const subString = newName.substring(0,14)
+console.log(subString);
+
+
+const trimStringValue = '     Naveenkrishna    ';
+
+console.log(trimStringValue);
+console.log(trimStringValue.trim());
+
+const splitStringValue = "Naveen%20krishna";
+
+console.log(splitStringValue.split());
+console.log(splitStringValue.replace('%20'," "));
