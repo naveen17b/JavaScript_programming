@@ -1,0 +1,38 @@
+/**
+ * For in loop: for in loop used when the array element 
+ */
+
+
+let car = {
+    model: "Golf",
+    make: "Volkswagen",
+    year: 1999,
+    color: "black",
+};
+
+//If we want to loop over the keys of the object, we can use the for in loop.
+
+for (let prop in car) {
+    console.log(car[prop]);
+}
+
+/**
+ * Object.keys is a useful method in JavaScript that returns an array of a given object's own enumerable property names. 
+ * This method is often used to iterate over an object's properties. 
+ * Here's how you can use Object.keys along with for...of and for...in loops to work with JSON data:
+ */
+
+let arrKeys = Object.keys(car);
+console.log(arrKeys);
+
+for (let val of arrKeys) {
+    console.log(val);
+}
+
+/**
+ * Object.entries is another useful method in JavaScript that returns an array of a 
+ * given object's own enumerable string-keyed property [key, value] pairs.
+ */
+
+let arrEntries = Object.entries(car);
+console.log(arrEntries);
