@@ -26,3 +26,16 @@ const newArr2 = new Array(myArr.splice(1, 4));
 
 console.log(newArr2);
 
+/**
+ * Splice method can be used to delete the value/elements in the arrays 
+ */
+let arr3 = [36,71,12,54,77,88,45,62,90];
+
+console.log(arr3.sort());
+
+console.log(arr3.splice(1,3));
+
+//console.log(arr3.sort);   //output -> [Function: sort]
+
+
+
