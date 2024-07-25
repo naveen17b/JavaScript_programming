@@ -36,3 +36,6 @@ for (let val of arrKeys) {
 
 let arrEntries = Object.entries(car);
 console.log(arrEntries);
+
+//delete this array later
+arrNew =[]
