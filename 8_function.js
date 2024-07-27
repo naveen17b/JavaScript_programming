@@ -24,20 +24,22 @@ function greet(name) {
     return `Hello, ${name}!`;
 }
 
+//greet(naveen);
+
 
 //function expression can be stored in variable:
 
-const greet = function (name) {
+const greet1 = function (name) {
     return `Hello, ${name}!`;
 };
 
 //arrow functions:
-const greet = (name) => {
+const greet2 = (name) => {
     return `Hello, ${name}!`;
 };
 
 // For single expression functions, the return can be omitted
-const greet = name => `Hello, ${name}!`;
+const greet3 = name => `Hello, ${name}!`;
 
 
 //immediately invoked functgion expressions:
@@ -82,14 +84,14 @@ class Person {
  * 
  */
 
-// greet.js
-export function greet(name) {
-    return `Hello, ${name}!`;
-}
+// // greet.js
+// export function greet(name) {
+//     return `Hello, ${name}!`;
+// }
 
-// main.js
-import { greet } from './greet.js';
-console.log(greet('World'));
+// // main.js
+// import { greet } from './greet.js';
+// console.log(greet('World'));
 
 
 /**
@@ -97,15 +99,15 @@ console.log(greet('World'));
  */
 
 
-const greet = (name) => {
+const greetPerson = (name) => {
     return `Hello, ${name}!`;
 };
 
 // For single expression functions, the return keyword can be omitted
-const greet = name => `Hello, ${name}!`;
+const greeting = name => `Hello, ${name}!`;
 
 // Using the function
-console.log(greet('Charlie')); // Output: Hello, Charlie!
+console.log(greeting('Charlie')); // Output: Hello, Charlie!
 
 /**
  * 
@@ -119,7 +121,7 @@ function greetDeclaration(name) {
 }
 
 // Function Expression
-const greetExpression = function(name) {
+const greetExpression = function (name) {
     return `Hello, ${name}!`;
 };
 
