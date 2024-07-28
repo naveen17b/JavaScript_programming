@@ -31,3 +31,21 @@ console.log('hello ,'+ nameOfIndividual.name2);
 /**
  * Methods:
  */
+
+class basicClass{
+    constructor (firstName, secondName){
+        this.firstName = firstName;
+        this.secondName = secondName;
+    }
+
+    //defining a method
+    wishPerson(){
+        console.log("Hello " + this.firstName + ", " + "I hope you are doing great!");
+    }
+    
+}
+
+let greet = new basicClass('krishna');
+//console.log(greeting); //basicClass { firstName: 'krishna', secondName: undefined }
+
+greet.wishPerson();
