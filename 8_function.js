@@ -2,7 +2,24 @@
 //and implement complex behavior. Functions in JavaScript are first-class objects, 
 //meaning they can be stored in variables, passed as arguments to other functions, and returned from other functions.
 
+//Basic declaration of function
 
+function newFunction() {
+
+}
+
+//calling the function
+newFunction();
+
+
+// //defining a function  and assiging a variable with the prompt keyword, this is to be used in a browser instead of here(code editors)
+
+// function secondFunction(){
+//     let nameOfPerson = prompt('what is your name?');
+//     console.log("hello " + nameOfPerson);
+// }
+
+// secondFunction();
 
 /**
  * Bindings declared with let and const are in fact local to the block that they
@@ -24,7 +41,7 @@ function greet(name) {
     return `Hello, ${name}!`;
 }
 
-//greet(naveen);
+//greet(Myname);
 
 
 //function expression can be stored in variable:
@@ -34,15 +51,59 @@ const greet1 = function (name) {
 };
 
 //arrow functions:
-const greet2 = (name) => {
+const greet2 = name => {
     return `Hello, ${name}!`;
 };
 
 // For single expression functions, the return can be omitted
 const greet3 = name => `Hello, ${name}!`;
 
+let addNumber = (x, y) => console.log(x+y);
 
-//immediately invoked functgion expressions:
+addNumber(4, 7);
+
+
+//Arrow function for the arry elements
+
+let arrElements = ['Testing', 'Development', 'DevOps'];
+//let domain = "IT Domain";
+console.table(arrElements);
+arrElements.forEach(ae => (console.table(ae)));
+
+
+
+/**
+ * Spread operator:
+ */
+
+
+let spread = ["so", "much", "fun"];
+let message = ["JavaScript", "is", ...spread, "and", "very",
+    "powerful"];
+
+console.log(message);
+
+//Rest parameters
+
+function restParameterFunction(par1, par2) {
+    console.log(par1, par2);
+}
+
+restParameterFunction(23, 54, 678);
+
+//now, use ...par2 in the above function
+
+function restParameterFunction(par1, ...par2) {
+    console.log(par1, par2);
+}
+
+restParameterFunction(23, 54, 678);
+
+
+/**
+ * immediately invoked functgion expressions: it gets invoked immediately
+ */
+
 (function (name) {
     console.log(`Hello, ${name}!`);
 })('World');
