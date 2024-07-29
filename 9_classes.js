@@ -11,18 +11,18 @@
 
 // define a class
 
-class FirstClass{
-    constructor (name1, name2) {
+class FirstClass {
+    constructor(name1, name2) {
         this.name1 = name1;
         this.name2 = name2;
     }
 
 }
 
-let nameOfIndividual = new FirstClass('kumar','pavan');
+let nameOfIndividual = new FirstClass('kumar', 'pavan');
 
 console.log('hi ,' + nameOfIndividual.name1);
-console.log('hello ,'+ nameOfIndividual.name2);
+console.log('hello ,' + nameOfIndividual.name2);
 
 
 
@@ -32,20 +32,89 @@ console.log('hello ,'+ nameOfIndividual.name2);
  * Methods:
  */
 
-class basicClass{
-    constructor (firstName, secondName){
+class basicClass {
+    constructor(firstName, secondName) {
         this.firstName = firstName;
         this.secondName = secondName;
     }
 
     //defining a method
-    wishPerson(){
+    wishPerson() {
         console.log("Hello " + this.firstName + ", " + "I hope you are doing great!");
     }
-    
+
 }
 
 let greet = new basicClass('krishna');
 //console.log(greeting); //basicClass { firstName: 'krishna', secondName: undefined }
 
 greet.wishPerson();
+
+
+/**
+ * Properties: Properties, sometimes also called fields, hold the data of the class.
+ * Often, it is not desirable to provide direct access to our properties
+ */
+
+//from the above defined class
+
+console.log('hi ' + greet.firstName);
+
+
+//if we dont want to grant access to the properties direct access from outside
+
+class Person {
+    #firstName;
+    #lastName;
+    constructor(firstName, lastName) {
+        this.#firstName = firstName;
+        this.#lastName = lastName;
+
+        //let p = new Person('krishna', 'ram');
+        console.log(firstName);
+        // output ->  krishna
+
+    }
+
+}
+
+let p = new Person('Rama', 'krishna', 'ram');
+console.log(p.firstName);      //output  ->  undefined
+
+
+/**
+ * Getters and setter methods:
+ */
+
+class PersonDetails {
+    #firstname;
+    #lastname;
+    constructor(firstName, lastName) {
+        this.#firstname = firstName;
+        this.#lastname = lastName;
+    }
+
+    get firstname() {
+        return this.#firstname;
+    }
+
+    set firstname(firstName) {
+        this.#firstname = firstName;
+    }
+
+    get lastname() {
+        return this.#lastname;
+    }
+
+    set lastname(lastName) {
+        this.#lastname = lastName;
+    }
+}
+
+let p1 = new Person('kumar', 'krishna', 'ram');
+console.log(p1.firstName);  //output -> kumar
+
+p1.firstName = 'pavan';
+console.log(p1.firstName);
+//output -> pavan
+
