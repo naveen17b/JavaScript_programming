@@ -19,8 +19,8 @@ console.log("Decoded:", decoded_uri);
  * encodeUriComponent():
  */
 
-let encoded_uri1 = decodeURIComponent(uri);
+let encoded_uri1 = encodeURIComponent(uri);
 console.log('Encode:'+ encoded_uri1);
 
-let decoded_uri1 = decodeURI(encoded_uri);
+let decoded_uri1 = decodeURIComponent(encoded_uri);
 console.log("Decoded:", decoded_uri1);
