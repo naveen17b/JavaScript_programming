@@ -36,3 +36,35 @@ console.log(filteredArrayElement);
 
 console.log(array_items.every(filterArray));
 
+/**
+ * Mapping the values of the array: 
+ * 
+ * map: Calls a defined callback function on each element of an array, and returns an array that contains the results.
+ */
+
+let arrayElements = [1, 2, 4, 7];
+
+mappedArray = arrayElements.map(x => x +1);
+
+console.log(mappedArray);
+
+
+/**
+ * Last occurance in an array
+ */
+
+let array1 = ['good', 'better', 'best','better', 'good','better'];
+
+lsOccurance = array1.lastIndexOf('better');
+
+console.log(lsOccurance);
+
+
+/**
+ * fixing the number of decimal point a number must deliver
+ */
+
+let x = 1.23456;
+let newX = x.toFixed(3);
+console.log(x, newX);  //1.23456 1.235
+
