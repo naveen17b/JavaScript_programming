@@ -39,9 +39,10 @@ newFunction();
 //declaring function
 function greet(name) {
     return `Hello, ${name}!`;
+    
 }
 
-//greet(Myname);
+//greet(name);
 
 
 //function expression can be stored in variable:
@@ -69,6 +70,9 @@ let arrElements = ['Testing', 'Development', 'DevOps'];
 //let domain = "IT Domain";
 console.table(arrElements);
 arrElements.forEach(ae => (console.table(ae)));
+arrElements.push('full stack testing');
+console.count(arrElements);
+console.info(arrElements);
 
 
 
