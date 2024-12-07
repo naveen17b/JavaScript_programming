@@ -22,9 +22,6 @@ console.log('hi ,' + nameOfIndividual.name1);
 console.log('hello ,' + nameOfIndividual.name2);
 
 
-
-
-
 /**
  * Methods:
  */
@@ -46,8 +43,6 @@ let greet = new basicClass('krishna');
 //console.log(greeting); //basicClass { firstName: 'krishna', secondName: undefined }
 
 greet.wishPerson();
-
-
 /**
  * Properties: Properties, sometimes also called fields, hold the data of the class.
  * Often, it is not desirable to provide direct access to our properties
@@ -74,6 +69,12 @@ class Person {
     }
 
 }
+
+/**
+ * The new word is what tells JavaScript to look for the special constructor function in the Person class and create a new object. 
+ * The constructor gets called and returns an instance of the person object with the specified properties. 
+ * This object gets stored in the p variable.
+ */
 
 let p = new Person('Rama', 'krishna', 'ram');
 console.log(p.firstName);      //output  ->  undefined
