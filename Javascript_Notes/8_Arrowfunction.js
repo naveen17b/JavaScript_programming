@@ -14,8 +14,16 @@ let addNumber = (x, y) => console.log(x + y);
 
 addNumber(4, 7);
 
+const nameOfTheStudent = () => console.log("The name of the student is Krishna");
+nameOfTheStudent();
 
-//Arrow function for the arry elements
+//Arrow function for the array elements
+
+/**
+ * we can combine the arrow function with certain built-in methods.
+ * For example, we can use the foreach() method on an array. 
+ * This method executes a certain function for every element in the array
+ */
 
 let arrElements = ['Testing', 'Development', 'DevOps'];
 
