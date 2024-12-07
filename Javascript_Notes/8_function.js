@@ -1,6 +1,9 @@
-// function: They encapsulate code that can be reused, help organize code, 
-//and implement complex behavior. Functions in JavaScript are first-class objects, 
-//meaning they can be stored in variables, passed as arguments to other functions, and returned from other functions.
+/**
+ * function: They encapsulate code that can be reused, help organize code, and implement complex behavior. 
+ * Functions in JavaScript are first-class objects, meaning they can be stored in variables, 
+ * passed as arguments to other functions, and returned from other functions.
+ * 
+ */
 
 //Basic declaration of function
 
@@ -12,14 +15,24 @@ function newFunction() {
 newFunction();
 
 
-// //defining a function  and assiging a variable with the prompt keyword, this is to be used in a browser instead of here(code editors)
+/**
+ * Here's why you should use ${name}:
+ * 
+ * Template Literals: Template literals are a feature in JavaScript that allows for easier string interpolation and multi-line strings.
+ * 
+ * They are enclosed in backticks (`) instead of single ('') or double ("") quotes.
+ * 
+ * String Interpolation: Using ${} inside a template literal allows you to insert the value of a variable or an expression directly into the string.
+ * 
+ * Readability: It makes the code more readable and concise compared to concatenation.
+ */
 
-// function secondFunction(){
-//     let nameOfPerson = prompt('what is your name?');
-//     console.log("hello " + nameOfPerson);
-// }
+function wish(name) {
+    return `hello, ${name}`;        // (name) -> will not work
+}
 
-// secondFunction();
+console.log(wish("naveen"));
+
 
 /**
  * Bindings declared with let and const are in fact local to the block that they
@@ -34,12 +47,10 @@ newFunction();
  * @returns 
  */
 
-
-
 //declaring function
 function greet(name) {
     return `Hello, ${name}!`;
-    
+
 }
 
 //greet(name);
@@ -59,7 +70,7 @@ const greet2 = name => {
 // For single expression functions, the return can be omitted
 const greet3 = name => `Hello, ${name}!`;
 
-let addNumber = (x, y) => console.log(x+y);
+let addNumber = (x, y) => console.log(x + y);
 
 addNumber(4, 7);
 
