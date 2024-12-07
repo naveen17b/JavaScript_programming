@@ -1,7 +1,6 @@
 /**
- * Inheritance:
+ * Inheritance: classes can have child classes that inherit the properties and methods from the parent class
  */
-
 
 class Vehicle {
 
@@ -50,6 +49,8 @@ class Motorcycle extends Vehicle {
 let motor = new Motorcycle(0, "Black", 250, 28.5);
 console.log(motor.color);
 
+console.log("This is a " + motor.engine + "cc Engine");
+console.log("This bike is having a  milage of " + motor.fuelEffeciency);
 motor.doWheelie();
 
 
