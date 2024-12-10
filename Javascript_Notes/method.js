@@ -1,3 +1,9 @@
+/**
+ * The difference between a method and a function is that a function is defined 
+ * anywhere in the script, and a method is defined inside a class.
+ */
+
+
 class Conversation {
 
     constructor(name, object) {
