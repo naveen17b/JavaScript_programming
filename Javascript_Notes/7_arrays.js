@@ -49,6 +49,28 @@ arr.forEach(printStuff);
 
 arr.values();
 
+/*     */
+
+const Arr2 = [10, 20, 30, 40];
+
+// Using values() to get an iterator
+const iterator = Arr2.values();
+
+console.log(iterator.next().value); // 10
+console.log(iterator.next().value); // 20
+console.log(iterator.next().value); // 30
+console.log(iterator.next().value); // 40
+
+// Using for...of loop to iterate
+for (const value of Arr2.values()) {
+  console.log(value); // 10, 20, 30, 40
+}
+
+// Using the spread operator to convert to an array
+const valuesArray = [...Arr2.values()];
+console.log(valuesArray); // [10, 20, 30, 40]
+
+
 
 /**
  * mapping of the array elements
