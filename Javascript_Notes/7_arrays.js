@@ -37,5 +37,26 @@ console.log(arr3.splice(1,3));
 
 //console.log(arr3.sort);   //output -> [Function: sort]
 
+/**
+ * itterating through the array elements using the functions
+ */
+
+let arr = ["grapefruit", 4, "hello", 5.6, true];
+function printStuff(element, index) {
+console.log("Printing stuff:", element, "on array position:", index);
+}
+arr.forEach(printStuff);
+
+arr.values();
+
+
+/**
+ * mapping of the array elements
+ */
+
+let arr2 = [1, 2, 3, 4];
+let mapped_arr = arr2.map(x => x + 1);
+console.log(mapped_arr);
+
 
 
