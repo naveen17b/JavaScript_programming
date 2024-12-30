@@ -6,5 +6,7 @@
 
 
 /**
- * 
+ * const 
+ * const declarations always need an initializer, because they forbid any kind of assignment after declaration, 
+ * and implicitly initializing it with undefined is likely a programmer mistake.
  */
