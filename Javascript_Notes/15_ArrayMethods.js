@@ -46,6 +46,10 @@ let arrayElements = [1, 2, 4, 7];
 
 mappedArray = arrayElements.map(x => x +1);
 
+reversedArray = arrayElements.reverse();
+
+console.log(reversedArray);
+
 console.log(mappedArray);
 
 
