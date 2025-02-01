@@ -8,7 +8,8 @@
 //Basic declaration of function
 
 function newFunction() {
-
+    console.log(`im a tester`);
+    
 }
 
 //calling the function
@@ -66,7 +67,11 @@ const greet1 = function (name) {
 
 
 /**
- * Spread operator:
+ * Spread operator: The spread operator allows an iterable to expand in places where 0+ arguments are expected.
+ * It is mostly used in the variable array where there is more than 1 values are expected.
+ * 
+ * Rest parameters: The rest parameter syntax allows a function to accept an indefinite number of arguments as an array.
+ * 
  */
 
 
@@ -91,15 +96,6 @@ function restParameterFunction(par1, ...par2) {
 }
 
 restParameterFunction(23, 54, 678);
-
-
-/**
- * immediately invoked functgion expressions: it gets invoked immediately
- */
-
-(function (name) {
-    console.log(`Hello, ${name}!`);
-})('World');
 
 
 //Generator function, it can pause and resume execution:

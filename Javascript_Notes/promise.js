@@ -5,20 +5,25 @@
  */
 
 let myPromise = new Promise((resolve, reject) => {
-    let success = true; // Change this to false to test rejection
-  
-    if (success) {
-      resolve("Operation was successful!");
-    } else {
-      reject("Something went wrong.");
-    }
+  let success = false; // Change this to false to test rejection
+
+  if (success) {
+    resolve("Operation was successful!");
+  }
+
+  if (success != true) {
+    resolve("Operation was not successful!");
+
+  }
+  // else {
+  //   reject("Something went wrong.");
+  // }
+});
+
+myPromise
+  .then(result => {
+    console.log(result); // This will run if the promise is resolved
+  })
+  .catch(error => {
+    console.log(error); // This will run if the promise is rejected
   });
-  
-  myPromise
-    .then(result => {
-      console.log(result); // This will run if the promise is resolved
-    })
-    .catch(error => {
-      console.log(error); // This will run if the promise is rejected
-    });
-  
