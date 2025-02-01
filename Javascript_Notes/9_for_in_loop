@@ -12,6 +12,15 @@ let car = {
 
 //If we want to loop over the keys of the object, we can use the for in loop.
 
+/*
+
+for(let iterator of Object)
+{
+    console.log(iterator);
+}
+
+*/
+
 for (let prop in car) {
     console.log(car[prop]);
 }
