@@ -20,3 +20,8 @@
     console.log(`Hello, ${name}!`);
 
 }) (`naveen`);
+
+
+(function nameOfuser(name){
+    return `Hello, ${name}!`;
+}) (nameOfuser(`naveen`));
