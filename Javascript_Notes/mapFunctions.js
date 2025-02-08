@@ -1,5 +1,10 @@
 
-//map function: The map() method creates a new array with the results of calling a provided function on every element in the calling array.
+/**
+ * map function: The map() method creates a new array with the results of calling a provided function on every element in the calling array.
+ * 
+ * maps can't be iterated hence for in or for of loops can';t be used to iterate
+ * 
+ */
 
 //example:1
 const arrayToMap = [1,2,3,4,5];
