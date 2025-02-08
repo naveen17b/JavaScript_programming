@@ -1,3 +1,7 @@
+/**
+ * Premitive datatypes: 
+ */
+
 console.group("This is a message to know the Data Type of the variable");
 
 let age = 25;
