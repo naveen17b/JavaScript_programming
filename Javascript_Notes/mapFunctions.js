@@ -26,3 +26,21 @@ for( const [key, value] of map) {
  * But, we can use the Object.keys() method to get the keys of the object and then iterate over them.
  * 
  */
+
+
+//looping on the objects  --> ofr in is used to iterate throught the elementws in the object
+
+const mapObject = {
+
+    js: 'javascript',
+    ts:'typescript',
+    py:'pyhton'
+}
+
+for (const key in mapObject) {
+    if (Object.prototype.hasOwnProperty.call(mapObject, key)) {
+        const element = mapObject[key];
+        console.log(element);
+        
+    }
+}
