@@ -61,9 +61,9 @@ function greet(name) {
 
 const greet1 = function (name) {
     return `Hello, ${name}!`;
-};
+}
 
-
+console.log(greet1("krishna"))
 
 
 /**
@@ -95,7 +95,7 @@ function restParameterFunction(par1, ...par2) {
     console.log(par1, par2);
 }
 
-restParameterFunction(23, 54, 678);
+restParameterFunction(23, 54, 178);
 
 
 //Generator function, it can pause and resume execution:

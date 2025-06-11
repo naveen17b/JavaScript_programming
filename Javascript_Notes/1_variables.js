@@ -1,4 +1,4 @@
-const nameOfPerson = " Naveen Krishna";
+const nameOfPerson = "Naveen Krishna";
 let NameOfCity = "Hyderabad";
 const Designation = "Software Test engineer";
 
