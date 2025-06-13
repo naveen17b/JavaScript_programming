@@ -14,7 +14,7 @@ console.log(myArr.reverse());
 
 const newArr1 = new Array(myArr.slice(1, 4));
 
-console.log(newArr1);
+console.log("The new Array is : " + newArr1);
 
 /**
  * Deep Copy: A deep copy of an object is a copy whose properties do not share the same references 
