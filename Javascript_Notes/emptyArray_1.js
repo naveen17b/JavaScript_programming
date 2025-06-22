@@ -1,8 +1,8 @@
-const fish = ["Lion", , "Angel"];
+const animal = ["Lion", , "Angel"];
 
-console.log(fish);
+console.log(animal);
 
-const result = fish.map((item, index) => item || `Slot ${index}`);
+const result = animal.map((item, index) => item || `Slot ${index}`);
 
 console.log(result);
 
