@@ -81,3 +81,38 @@ programmingLanguage.forEach((val) => {
 
 });
     
+
+const series = ["Breaking Bad", "Game of Thrones", "Stranger Things"];
+
+series.forEach((show, index, array) => {
+    console.log(`Show ${index + 1}: ${show} - Array length: ${array.legth}`);
+});
+
+
+//foreach as objects
+//useful in databases, APIs, etc. to iterate over objects
+//forEach can be used to iterate over arrays of objects, allowing you to access properties of
+//each object within the array.
+//Example: Iterating over an array of objects representing programming languages
+const languages = [
+
+    {
+        language: "javascript",
+        type: "scripting",
+
+    },
+    {
+        language: "python",
+        type: "scripting",
+
+    },
+    {
+        language: "java",
+        type: "programming",
+    }
+
+]
+
+languages.forEach((lang) => {
+    console.log(lang.type);
+})
